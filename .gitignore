@@ -1,0 +1,2 @@
+# Ignore Bootstrap installed files. All will be compiled, no need of them.
+node_modules/
