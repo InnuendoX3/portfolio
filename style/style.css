@@ -1,4 +1,11 @@
-#learning img {
+body {
+  background-color: #c3b9b4;
+}
+
+#this-is-me #my-picture img {
+  height: 100vh;
+}
+#this-is-me #learning img {
   height: 60px;
 }
 
