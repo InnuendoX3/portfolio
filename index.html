@@ -10,79 +10,89 @@
    <title>Johan Garzon</title>
 </head>
 
-<body>
+<body class="bg-light d-flex">
+   <!-- Picture on left side -->
+   <div id="my-picture">
+      <img class="" src="images/me.jpg" alt="Johan sitting on a big chair">
+   </div>
 
-   <nav class="navbar navbar-expand-sm navbar-light bg-light">
+   <!-- Big right section -->
+   <section class="w-75">
 
-      <a class="navbar-brand">Johan Garzon</a>
+      <!-- Navigation bar -->
+      <nav class="navbar navbar-expand-sm navbar-light bg-light mx-auto">
+         <a class="navbar-brand">Johan Garzon</a>
+         <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+               <a class="nav-link" href="#">
+                  This is me
+               </a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">
+                  Portfolio
+               </a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">
+                  Contact
+               </a>
+            </li>
+         </ul>
+      </nav>
 
-      <ul class="navbar-nav ml-auto">
-         <li class="nav-item active">
-            <a class="nav-link" href="#">
-               This is me
-            </a>
-         </li>
-         <li class="nav-item">
-            <a class="nav-link" href="#">
-               Portfolio
-            </a>
-         </li>
-         <li class="nav-item">
-            <a class="nav-link" href="#">
-               Contact
-            </a>
-         </li>
-      </ul>
-   </nav>
+      <!-- This is me-->
+      <section id="this-is-me" class="text-center">
 
-   <!-- This is me-->
-   <section id="this-is-me">
-      <div id="my-picture">
-         <img class="" src="images/me.jpg" alt="Johan sitting on a big chair">
-      </div>
-      <h2>Hi, I'm Johan</h2>
-      <p>A few months ago I started to study Full Stack Web Development at <a href="www.nackademin.se">Nackademin</a>.
-         And if you ask me how is it going, the answer would be a big GREAT! I just really like what I'm doing and want
-         to put into pratice these things I'm learning on the real world.
-      </p>
-      <div id="learning">
-         <img src="images/logos/Html5.svg" alt="">
-         <img src="images/logos/Css3.svg" alt="">
-         <img src="images/logos/Javascript.svg" alt="">
-         <img src="images/logos/Jquery.svg" alt="">
-         <img src="images/logos/Git.svg" alt="">
-         <img src="images/logos/Github.svg" alt="">
-         <img src="images/logos/Bootstrap.svg" alt="">
-         <img src="images/logos/Sass.svg" alt="">
-      </div>
-
-
-   </section>
-
-   <!-- Portfolio -->
-   <section>
-      <h1>Portfolio</h1>
+         <div>
+            <h2>Hi, I'm Johan</h2>
+            <p>A few months ago I started to study Full Stack Web Development at <a
+                  href="www.nackademin.se">Nackademin</a>.
+               And if you ask me how is it going, the answer would be a big GREAT! I just really like what I'm doing and
+               want
+               to put into pratice these things I'm learning on the real world.
+            </p>
+            <div id="learning">
+               <img src="images/logos/Html5.svg" alt="">
+               <img src="images/logos/Css3.svg" alt="">
+               <img src="images/logos/Javascript.svg" alt="">
+               <img src="images/logos/Jquery.svg" alt="">
+               <img src="images/logos/Git.svg" alt="">
+               <img src="images/logos/Github.svg" alt="">
+               <img src="images/logos/Bootstrap.svg" alt="">
+               <img src="images/logos/Sass.svg" alt="">
+            </div>
+         </div>
 
 
-   </section>
+      </section>
 
-   <!--  Contact  -->
-   <section>
-      <h1>Contact</h1>
-      <form action="">
-         <label for="name">Name</label>
-         <input type="text" id="name">
-         <label for="e-mail">Email</label>
-         <input type="email" id="e-mail">
-         <label for="message">Message</label>
-         <textarea name="" id="message" cols="30" rows="10"></textarea>
-      </form>
-      <div>
-         <a href="https://www.linkedin.com/in/johan-garzon-a50b9b13a/"><img src="images/icons/icons8-linkedin.png"
-               alt=""></a>
-         <a href=""><img src="images/icons/icons8-mail.png" alt=""></a>
-      </div>
-      <input type="submit" value="Submit">
+      <!-- Portfolio -->
+      <section>
+         <h1>Portfolio</h1>
+
+
+      </section>
+
+      <!--  Contact  -->
+      <section>
+         <h1>Contact</h1>
+         <form action="">
+            <label for="name">Name</label>
+            <input type="text" id="name">
+            <label for="e-mail">Email</label>
+            <input type="email" id="e-mail">
+            <label for="message">Message</label>
+            <textarea name="" id="message" cols="30" rows="10"></textarea>
+         </form>
+         <div>
+            <a href="https://www.linkedin.com/in/johan-garzon-a50b9b13a/"><img src="images/icons/icons8-linkedin.png"
+                  alt=""></a>
+            <a href=""><img src="images/icons/icons8-mail.png" alt=""></a>
+         </div>
+         <input type="submit" value="Submit">
+      </section>
+
    </section>
 
 

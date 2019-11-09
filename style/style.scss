@@ -1,21 +1,22 @@
-body{
-   background-color: #c3b9b4;
+#my-picture {
+   img {
+      height: 100vh;
+   }
 }
 
 #this-is-me {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
 
-   #my-picture {
-      img {
-         height: 100vh;
-      }
-   }
+
 
    #learning {
       img {
          height: 60px;
       }
    }
-   
+
 }
 
 
