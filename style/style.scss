@@ -8,20 +8,29 @@
    display: flex;
    justify-content: center;
    flex-wrap: wrap;
-
+/*
    h2 {
       width: 100%;
    }
 
    p {
-      width: 60%;
+      width: 70%;
+   }
+*/
+   #my-info {
+      width: 70%;
+      text-align: left;
    }
 
-
    #learning {
-      width: 40%;
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
       img {
-         height: 50px;
+         width: 50px;
+         margin: 5px;
       }
    }
 

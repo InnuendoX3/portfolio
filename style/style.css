@@ -6,18 +6,29 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  /*
+     h2 {
+        width: 100%;
+     }
+
+     p {
+        width: 70%;
+     }
+  */
 }
-#this-is-me-sec h2 {
-  width: 100%;
-}
-#this-is-me-sec p {
-  width: 60%;
+#this-is-me-sec #my-info {
+  width: 70%;
+  text-align: left;
 }
 #this-is-me-sec #learning {
-  width: 40%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #this-is-me-sec #learning img {
-  height: 50px;
+  width: 50px;
+  margin: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
