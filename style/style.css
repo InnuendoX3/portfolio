@@ -7,8 +7,17 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+#this-is-me-sec h2 {
+  width: 100%;
+}
+#this-is-me-sec p {
+  width: 60%;
+}
+#this-is-me-sec #learning {
+  width: 40%;
+}
 #this-is-me-sec #learning img {
-  height: 60px;
+  height: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
