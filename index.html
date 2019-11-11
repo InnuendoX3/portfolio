@@ -68,7 +68,8 @@
                <span class="key">"course": </span><span class="value">"Full Stack Web Developer",</span>
             </div>
             <div class="tab2">
-               <span class="key">"at": </span><span class="value">"<a href="https://www.nackademin.se" target="_blank">Nackademin</a>",</span>
+               <span class="key">"at": </span><span class="value">"<a href="https://www.nackademin.se"
+                     target="_blank">Nackademin</a>",</span>
             </div>
             <div class="tab2">
                <span class="key">"started": </span><span class="value">"August 2019"</span>
@@ -104,21 +105,27 @@
 
       <!--  Contact  -->
       <section id="contact-sec">
-         <h1>Contact</h1>
          <form action="">
-            <label for="name">Name</label>
-            <input type="text" id="name">
-            <label for="e-mail">Email</label>
-            <input type="email" id="e-mail">
-            <label for="message">Message</label>
-            <textarea name="" id="message" cols="30" rows="10"></textarea>
+            <div class="form-group">
+               <label for="name">Name</label>
+               <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+               <label for="e-mail">Email</label>
+               <input type="email" class="form-control" id="e-mail">
+            </div>
+            <div class="form-group">
+               <label for="message">Message</label>
+               <textarea class="form-control" id="message" rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
          </form>
-         <div>
+
+         <div id="contact-icon-sec">
             <a href="https://www.linkedin.com/in/johan-garzon-a50b9b13a/"><img src="images/icons/icons8-linkedin.png"
                   alt=""></a>
             <a href=""><img src="images/icons/icons8-mail.png" alt=""></a>
          </div>
-         <input type="submit" value="Submit">
       </section>
 
    </section>
