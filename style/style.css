@@ -4,31 +4,44 @@
 
 #this-is-me-sec {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
-  /*
-     h2 {
-        width: 100%;
-     }
-
-     p {
-        width: 70%;
-     }
-  */
+  height: 90%;
+  color: #5697db;
 }
 #this-is-me-sec #my-info {
-  width: 70%;
   text-align: left;
+  font-family: "Source Code Pro", monospace;
+  font-size: 24px;
+}
+#this-is-me-sec #my-info a {
+  color: #7a263a;
 }
 #this-is-me-sec #learning {
-  width: 30%;
+  width: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 #this-is-me-sec #learning img {
-  width: 50px;
+  width: 40px;
   margin: 5px;
+}
+#this-is-me-sec .tab {
+  margin-left: 1.5em;
+}
+#this-is-me-sec .tab2 {
+  margin-left: 3em;
+}
+#this-is-me-sec .key {
+  color: #5697db;
+}
+#this-is-me-sec .value {
+  color: #7a263a;
+}
+#this-is-me-sec .value:hover {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
