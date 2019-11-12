@@ -44,6 +44,23 @@
   font-weight: bold;
 }
 
+#portfolio-sec {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 90%;
+}
+#portfolio-sec .c-size {
+  width: 239px;
+}
+#portfolio-sec .c-body-size {
+  height: 120px;
+}
+#portfolio-sec img {
+  height: 200px;
+}
+
 #contact-sec {
   display: flex;
   justify-content: space-around;

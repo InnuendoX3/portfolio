@@ -52,6 +52,31 @@
    }
 }
 
+
+#portfolio-sec {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-wrap: wrap;
+   height: 90%;
+
+   .c-size {
+      width: 239px;
+   }
+
+   .c-body-size {
+      height: 120px;
+   }
+
+
+
+   img {
+      height: 200px;
+   }
+
+}
+
+
 #contact-sec {
    display: flex;
    justify-content: space-around;
