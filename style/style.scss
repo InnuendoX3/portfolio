@@ -48,8 +48,10 @@
             width: 40px;
             margin: 5px;
             transition: 0.25s;
+            opacity: 0.5;
             &:hover {
                width: 60px;
+               opacity: 1;
             }
          }
       }
