@@ -13,40 +13,60 @@
    height: 90%;
    color: #5697db;
 
+   #my-info-deco {
+      display: flex;
+      justify-content: space-around;
+      align-items:center;
+      width: 100%;
+   }
+
    #my-info {
       text-align: left;
       font-family: 'Source Code Pro', monospace;
       font-size: 24px;
+
       a {
-         //text-decoration: none;
          color: $code-color-val;
       }
    }
 
    #learning {
-      width: 80px;
       display: flex;
+      height: 100px;
+      width: 80%;
+      justify-content: space-around;
+      align-items: center;
 
-      img {
-         width: 40px;
-         margin: 5px;
+      div {
+         width: 80px;
+         height: 80px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         
+         img {
+            width: 40px;
+            margin: 5px;
+            transition: 0.25s;
+            &:hover {
+               width: 60px;
+            }
+         }
       }
+
+
    }
 
-   .tab {
-      margin-left: 1.5em;
-   }
-   .tab2 {
-      margin-left: 3em;
+   .deco {
+      font-size: 300px;
+      color: #bce4fc;
    }
    .key {
       color: #5697db;
    }
    .value {
       color: $code-color-val;
-      &:hover {
-         font-weight: bold;
-      }
+      font-size: 28px;
    }
 }
 
