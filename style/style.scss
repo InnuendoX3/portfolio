@@ -6,8 +6,20 @@ $code-color-val: #7a263a;
    align-items: center;
 }
 
+body {
+   display: flex;
+   //justify-content: center;
+}
+
+main {
+   width: 100%;
+}
+
 
 #my-picture {
+   //overflow: hidden;
+   display: flex;
+   justify-content: center;
    img {
       height: 100vh;
    }
@@ -57,6 +69,11 @@ $code-color-val: #7a263a;
             width: 60px;
             opacity: 1;
          }
+      }
+
+      .hooover{
+         width: 60px;
+         opacity: 1;
       }
    }
 }

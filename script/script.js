@@ -25,6 +25,38 @@ $(document).ready(function() {
       $("#me-link, #portfolio-link").removeClass("active");
    });
 
+   let learning = [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "JQuery",
+      "Git",
+      "GitHub",
+      "Bootstrap",
+      "Sass",
+      "JSon"
+   ];
+
+  // function infinite() {
+
+      $.each(learning, function(key, value) {
+         setTimeout(writeList, key * 1500);
+         
+         function writeList() {
+            $("#learning div img").removeClass("hooover");
+            $("#learning-here").text(value).hide().fadeIn("slow");
+            $("#log-" + key).addClass("hooover");
+         }
+         console.log("#log-" + key);
+        /* if (key == learning.length - 1) {
+            setTimeout(infinite, (key + 1) * 1000);
+        }*/
+      });
+
+   //}
+
+   //infinite();
+
 });
 
 

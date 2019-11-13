@@ -4,6 +4,18 @@
   align-items: center;
 }
 
+body {
+  display: flex;
+}
+
+main {
+  width: 100%;
+}
+
+#my-picture {
+  display: flex;
+  justify-content: center;
+}
 #my-picture img {
   height: 100vh;
 }
@@ -46,6 +58,10 @@
   opacity: 0.5;
 }
 #learning div img:hover {
+  width: 60px;
+  opacity: 1;
+}
+#learning div .hooover {
   width: 60px;
   opacity: 1;
 }
