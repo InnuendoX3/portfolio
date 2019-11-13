@@ -1,65 +1,70 @@
+#learning, #my-info-deco, #this-is-me-sec {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 #my-picture img {
   height: 100vh;
 }
 
+/* --- SECTION: THIS IS ME --- */
 #this-is-me-sec {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   flex-wrap: wrap;
   height: 90%;
   color: #5697db;
 }
-#this-is-me-sec #my-info-deco {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+
+#my-info-deco {
   width: 100%;
 }
-#this-is-me-sec #my-info {
+
+#my-info {
   text-align: left;
   font-family: "Source Code Pro", monospace;
   font-size: 24px;
 }
-#this-is-me-sec #my-info a {
+#my-info a {
   color: #7a263a;
 }
-#this-is-me-sec #learning {
-  display: flex;
+
+#learning {
   height: 100px;
-  width: 80%;
-  justify-content: space-around;
-  align-items: center;
+  width: 720px;
 }
-#this-is-me-sec #learning div {
+#learning div {
   width: 80px;
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#this-is-me-sec #learning div img {
+#learning div img {
   width: 40px;
   margin: 5px;
   transition: 0.25s;
   opacity: 0.5;
 }
-#this-is-me-sec #learning div img:hover {
+#learning div img:hover {
   width: 60px;
   opacity: 1;
 }
-#this-is-me-sec .deco {
+
+.deco {
   font-size: 300px;
   color: #bce4fc;
 }
-#this-is-me-sec .key {
+
+.key {
   color: #5697db;
 }
-#this-is-me-sec .value {
+
+.value {
   color: #7a263a;
   font-size: 28px;
 }
 
+/* --- SECTION: PORTFOLIO --- */
 #portfolio-sec {
   display: flex;
   justify-content: space-around;
@@ -67,26 +72,29 @@
   flex-wrap: wrap;
   height: 90%;
 }
+#portfolio-sec img {
+  height: 200px;
+}
 #portfolio-sec .c-size {
   width: 239px;
 }
 #portfolio-sec .c-body-size {
   height: 120px;
 }
-#portfolio-sec img {
-  height: 200px;
-}
 
+/* --- SECTION: CONTACT--- */
 #contact-sec {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 90%;
 }
-#contact-sec form {
+
+form {
   width: 50%;
 }
-#contact-sec #contact-icon-sec {
+
+#contact-icon-sec {
   width: 80px;
   display: flex;
   flex-direction: column;

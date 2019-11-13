@@ -1,84 +1,90 @@
+$code-color-val: #7a263a;
+
+%flex-around-center {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+
 #my-picture {
    img {
       height: 100vh;
    }
-}
+} 
 
+/* --- SECTION: THIS IS ME --- */
 #this-is-me-sec {
-   $code-color-val: #7a263a;
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
+   @extend %flex-around-center;
    flex-wrap: wrap;
    height: 90%;
    color: #5697db;
+}
 
-   #my-info-deco {
-      display: flex;
-      justify-content: space-around;
-      align-items:center;
-      width: 100%;
-   }
+#my-info-deco {
+@extend %flex-around-center;
+   width: 100%;
+}
 
-   #my-info {
-      text-align: left;
-      font-family: 'Source Code Pro', monospace;
-      font-size: 24px;
+#my-info {
+   text-align: left;
+   font-family: 'Source Code Pro', monospace;
+   font-size: 24px;
 
-      a {
-         color: $code-color-val;
-      }
-   }
-
-   #learning {
-      display: flex;
-      height: 100px;
-      width: 80%;
-      justify-content: space-around;
-      align-items: center;
-
-      div {
-         width: 80px;
-         height: 80px;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         
-         img {
-            width: 40px;
-            margin: 5px;
-            transition: 0.25s;
-            opacity: 0.5;
-            &:hover {
-               width: 60px;
-               opacity: 1;
-            }
-         }
-      }
-
-
-   }
-
-   .deco {
-      font-size: 300px;
-      color: #bce4fc;
-   }
-   .key {
-      color: #5697db;
-   }
-   .value {
+   a {
       color: $code-color-val;
-      font-size: 28px;
    }
 }
 
+#learning {
+   @extend %flex-around-center;
+   height: 100px;
+   width: 720px;
 
+   div {
+      width: 80px;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+         
+      img {
+         width: 40px;
+         margin: 5px;
+         transition: 0.25s;
+         opacity: 0.5;
+         &:hover {
+            width: 60px;
+            opacity: 1;
+         }
+      }
+   }
+}
+
+.deco {
+   font-size: 300px;
+   color: #bce4fc;
+}
+.key {
+   color: #5697db;
+}
+.value {
+   color: $code-color-val;
+   font-size: 28px;
+}
+
+
+/* --- SECTION: PORTFOLIO --- */
 #portfolio-sec {
    display: flex;
    justify-content: space-around;
    align-items: center;
    flex-wrap: wrap;
    height: 90%;
+
+   img {
+      height: 200px;
+   }
 
    .c-size {
       width: 239px;
@@ -87,33 +93,26 @@
    .c-body-size {
       height: 120px;
    }
-
-
-
-   img {
-      height: 200px;
-   }
-
 }
 
 
+/* --- SECTION: CONTACT--- */
 #contact-sec {
    display: flex;
    justify-content: space-around;
    align-items: center;
    height: 90%;
-   
-   form {
-      width: 50%;
-   }
-
-   #contact-icon-sec {
-      width: 80px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-   }
-
-
 }
+   
+form {
+   width: 50%;
+}
+
+#contact-icon-sec {
+   width: 80px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
 
