@@ -25,6 +25,15 @@ $(document).ready(function() {
       $("#me-link, #portfolio-link").removeClass("active");
    });
 
+
+   /* Languages */
+
+   let jsonFile = getJSON("http://www.mocky.io/v2/5dcd99512e00005600729fbb");
+   console.log(jsonFile.english.iname);
+   //console.log(jsonFile.english.i_at);
+   $("#i-key-name").text(jsonFile.english.iname);
+
+
    let learning = [
       "HTML",
       "CSS",
@@ -37,27 +46,20 @@ $(document).ready(function() {
       "JSON"
    ];
 
+   // Do effects on each learning item (zoom // show name) Infinite loop.
    function infinite() {
-
       $.each(learning, function(key, value) {
-         setTimeout(writeList, key * 1000);
-         
+         setTimeout(writeList, key * 1000);         
          function writeList() {
             $("#learning div img").removeClass("hooover");
             $("#learning-here").text(value).hide().fadeIn("slow");
             $("#log-" + key).addClass("hooover");
          }
-         console.log("#log-" + key);
-         console.log(learning.length);
-         console.log(key);
          if (key == learning.length - 1) {
             setTimeout(infinite, (key + 1) * 1000);
-         }
-        
+         }        
       });
-
    }
-
    infinite();
 
 });
