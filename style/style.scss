@@ -8,16 +8,18 @@ $code-color-val: #7a263a;
 
 body {
    display: flex;
+   background-color: #ffffff;
+   ;
    //justify-content: center;
 }
 
 main {
-   width: 100%;
+   width: 80%;
 }
 
 
 #my-picture {
-   //overflow: hidden;
+   overflow: hidden;
    display: flex;
    justify-content: center;
    img {
@@ -34,11 +36,16 @@ main {
 }
 
 #my-info-deco {
-@extend %flex-around-center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
    width: 100%;
 }
 
 #my-info {
+   display: flex;
+   flex-direction: column;
+   width: 700px;
    text-align: left;
    font-family: 'Source Code Pro', monospace;
    font-size: 24px;
@@ -83,11 +90,20 @@ main {
    color: #bce4fc;
 }
 .key {
+   width: 25%;
+   text-align: left;
    color: #5697db;
 }
 .value {
+   width: 75%;
+   text-align: left;
    color: $code-color-val;
    font-size: 28px;
+}
+.f-center {
+   display: flex;
+   align-items: center;
+   margin: 10px;
 }
 
 

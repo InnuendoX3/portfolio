@@ -1,4 +1,4 @@
-#learning, #my-info-deco, #this-is-me-sec {
+#learning, #this-is-me-sec {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -6,13 +6,15 @@
 
 body {
   display: flex;
+  background-color: #ffffff;
 }
 
 main {
-  width: 100%;
+  width: 80%;
 }
 
 #my-picture {
+  overflow: hidden;
   display: flex;
   justify-content: center;
 }
@@ -28,10 +30,16 @@ main {
 }
 
 #my-info-deco {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
 }
 
 #my-info {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
   text-align: left;
   font-family: "Source Code Pro", monospace;
   font-size: 24px;
@@ -72,12 +80,22 @@ main {
 }
 
 .key {
+  width: 25%;
+  text-align: left;
   color: #5697db;
 }
 
 .value {
+  width: 75%;
+  text-align: left;
   color: #7a263a;
   font-size: 28px;
+}
+
+.f-center {
+  display: flex;
+  align-items: center;
+  margin: 10px;
 }
 
 /* --- SECTION: PORTFOLIO --- */

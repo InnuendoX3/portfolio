@@ -34,13 +34,13 @@ $(document).ready(function() {
       "GitHub",
       "Bootstrap",
       "Sass",
-      "JSon"
+      "JSON"
    ];
 
-  // function infinite() {
+   function infinite() {
 
       $.each(learning, function(key, value) {
-         setTimeout(writeList, key * 1500);
+         setTimeout(writeList, key * 1000);
          
          function writeList() {
             $("#learning div img").removeClass("hooover");
@@ -48,14 +48,17 @@ $(document).ready(function() {
             $("#log-" + key).addClass("hooover");
          }
          console.log("#log-" + key);
-        /* if (key == learning.length - 1) {
+         console.log(learning.length);
+         console.log(key);
+         if (key == learning.length - 1) {
             setTimeout(infinite, (key + 1) * 1000);
-        }*/
+         }
+        
       });
 
-   //}
+   }
 
-   //infinite();
+   infinite();
 
 });
 
