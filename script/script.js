@@ -28,10 +28,34 @@ $(document).ready(function() {
 
    /* Languages */
 
-   let jsonFile = getJSON("http://www.mocky.io/v2/5dcd99512e00005600729fbb");
+   let jsonFile = getJSON("http://www.mocky.io/v2/5dcdde1b2e0000670072a0af");
    console.log(jsonFile.english.iname);
    //console.log(jsonFile.english.i_at);
-   $("#i-key-name").text(jsonFile.english.iname);
+   // navbar - language
+   $("#n-me").text(jsonFile.english.n_me);
+   $("#n-port").text(jsonFile.english.n_portfolio);
+   $("#n-cont").text(jsonFile.english.n_contact);
+   $("#navbarDropdown").text(jsonFile.english.n_dropdown);
+   // Info - language
+   $("#i-key-name").text(jsonFile.spanish.i_key_name);
+   $("#i-key-last").text(jsonFile.spanish.i_key_last);
+   $("#i-key-occu").text(jsonFile.swedish.i_key_occupation);
+   $("#i-val-occu").text(jsonFile.swedish.i_val_occupation);
+   $("#i-key-cour").text(jsonFile.english.i_key_course);
+   $("#i-val-cour").text(jsonFile.english.i_val_course);
+   $("#i-key-at").text(jsonFile.english.i_key_at);
+   $("#i-key-star").text(jsonFile.english.i_key_start);
+   $("#i-val-star").text(jsonFile.english.i_val_start);
+   $("#i-key-lear").text(jsonFile.english.i_key_learning);
+   // Portfolio - language
+   $("#p-card1-tex").text(jsonFile.english.p_card1_text);
+   $("#p-card2-tex").text(jsonFile.english.p_card2_text);
+   $("#portfolio-sec .btn").text(jsonFile.english.p_button);
+   // Contact - language
+   $("#c-name").text(jsonFile.english.c_name);
+   $("#c-email").text(jsonFile.english.c_email);
+   $("#c-mess").text(jsonFile.english.c_message);
+   $("#contact-sec button").text(jsonFile.english.c_button);
 
 
    let learning = [
