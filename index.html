@@ -26,17 +26,17 @@
          <a class="navbar-brand" href="#">Johan Garzon</a>
          <ul class="navbar-nav ml-auto">
             <li class="nav-item active" id="me-link">
-               <a class="nav-link" href="#">
+               <a class="nav-link" id="n-me" href="#">
                   This is me
                </a>
             </li>
             <li class="nav-item" id="portfolio-link">
-               <a class="nav-link" href="#">
+               <a class="nav-link" id="n-port" href="#">
                   Portfolio
                </a>
             </li>
             <li class="nav-item" id="contact-link">
-               <a class="nav-link" href="#">
+               <a class="nav-link" id="n-cont" href="#">
                   Contact
                </a>
             </li>
@@ -67,11 +67,11 @@
                </div>
                <div class="f-center">
                   <div class="key" id="i-key-occu">occupation: </div>
-                  <div class="value">Student</div>
+                  <div class="value" id="i-val-occu">Student</div>
                </div>
                <div class="f-center">
                   <div class="key" id="i-key-cour">course: </div>
-                  <div class="value">Full Stack Web Developer</div>
+                  <div class="value" id="i-val-cour">Full Stack Web Developer</div>
                </div>
                <div class="f-center">
                   <div class="key" id="i-key-at">at: </div>
@@ -79,7 +79,7 @@
                </div>
                <div class="f-center">
                   <div class="key" id="i-key-star">started: </div>
-                  <div class="value">August 2019</div>
+                  <div class="value" id="i-val-star">August 2019</div>
                </div>
                <div class="f-center">
                   <div class="key" id="i-key-lear">learning: </div>
@@ -135,7 +135,7 @@
             <div class="card-body">
                <div class="c-body-size">
                   <h5 class="card-title">N.I.M.</h5>
-                  <p class="card-text">Created in collaboration of Alexandre Previ and Moohammad Samaae</p>
+                  <p class="card-text" id="p-card1-tex">Created in collaboration of Alexandre Previ and Moohammad Samaae</p>
                </div>
                <a class="btn btn-primary" href="https://jsfiddle.net/InnuendoX3/d24vsgj7/38/" target="_blank">Take a
                   look</a>
@@ -147,7 +147,7 @@
             <div class="card-body">
                <div class="c-body-size">
                   <h5 class="card-title">GitHub</h5>
-                  <p class="card-text">My GitHub profile</p>
+                  <p class="card-text" id="p-card2-tex">My GitHub profile</p>
                </div>
                <a class="btn btn-primary" href="https://github.com/InnuendoX3" target="_blank">Take a
                   look</a>
@@ -161,15 +161,15 @@
       <section id="contact-sec">
          <form action="">
             <div class="form-group">
-               <label for="name">Name</label>
+               <label for="name" id="c-name">Name</label>
                <input type="text" class="form-control" id="name">
             </div>
             <div class="form-group">
-               <label for="e-mail">Email</label>
+               <label for="e-mail" id="c-email">Email</label>
                <input type="email" class="form-control" id="e-mail">
             </div>
             <div class="form-group">
-               <label for="message">Message</label>
+               <label for="message" id="c-mess">Message</label>
                <textarea class="form-control" id="message" rows="5"></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
