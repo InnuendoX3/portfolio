@@ -25,11 +25,11 @@ $(document).ready(function () {
       $("#me-link, #portfolio-link").removeClass("active");
    });
 
-
-   /* Languages */
-
-   //eventlistener
    
+
+
+   /* ===== LANGUAGE ===== */
+
    let elementsToTranslate = [
       "#n-me",
       "#n-port",
@@ -62,20 +62,40 @@ $(document).ready(function () {
    let jsonSwedish = jsonFile.swedish;
    let jsonSpanish = jsonFile.spanish;
 
-   $("#n-english").click(function(){renderTranslation(jsonEnglish)});
-   $("#n-swedish").click(function(){renderTranslation(jsonSwedish)});
-   $("#n-spanish").click(function(){renderTranslation(jsonSpanish)});
+   $("#n-english").click(function(){controlLanguage("English")});
+   $("#n-swedish").click(function(){controlLanguage("Swedish")});
+   $("#n-spanish").click(function(){controlLanguage("Spanish")});
 
-   renderTranslation(jsonSwedish);
 
-   function renderTranslation(language) {
-      let index = 0;
-      $.each(language, function(key, value) {
-         $(elementsToTranslate[index]).text(value);
-         index++;
-      });      
+   readLocalStorage();
+
+   /* Control language on logalStorage. If none set English as default */
+   function readLocalStorage() {
+      let readed = localStorage.getItem("language");
+      if(readed == null) {
+         readed = "English"; // First time - Default
+         console.log("No había nada en LocalStorage");
+      }
+      controlLanguage(readed);
    }
 
+   /* Write (string) on LocalStorage // Send (object) to render */
+   function controlLanguage(langString) {
+      localStorage.setItem("language", langString);
+      renderTranslation(eval("json"+langString));
+   }
+
+   /* Take an json language object to render on page */
+   function renderTranslation(jsonLanguage) {
+      let index = 0;
+      $.each(jsonLanguage, function(key, value) {
+         $(elementsToTranslate[index]).text(value);
+         index++;
+      });
+   }
+
+
+   /* ===== Effects ===== */
 
    let learning = [
       "HTML",
