@@ -1,9 +1,9 @@
-$(document).ready(function() {
+$(document).ready(function () {
    $("#portfolio-sec").hide();
    $("#contact-sec").hide();
 
    // Navbar - links
-   $("#me-link").click(function(){
+   $("#me-link").click(function () {
       $("#this-is-me-sec").show();
       $("#portfolio-sec, #contact-sec").hide();
       $(this).addClass("active");
@@ -11,14 +11,14 @@ $(document).ready(function() {
 
    });
 
-   $("#portfolio-link").click(function(){
+   $("#portfolio-link").click(function () {
       $("#portfolio-sec").show();
       $("#this-is-me-sec, #contact-sec").hide();
       $(this).addClass("active");
       $("#me-link, #contact-link").removeClass("active");
    });
 
-   $("#contact-link").click(function(){
+   $("#contact-link").click(function () {
       $("#contact-sec").show();
       $("#this-is-me-sec, #portfolio-sec").hide();
       $(this).addClass("active");
@@ -28,34 +28,50 @@ $(document).ready(function() {
 
    /* Languages */
 
+   //eventlistener
+   
+
+   let elementsToTranslate = [
+      "#n-me",
+      "#n-port",
+      "#n-cont",
+      "#navbarDropdown",
+      // Info - language
+      "#i-key-name",
+      "#i-key-last",
+      "#i-key-occu",
+      "#i-val-occu",
+      "#i-key-cour",
+      "#i-val-cour",
+      "#i-key-at",
+      "#i-key-star",
+      "#i-val-star",
+      "#i-key-lear",
+      // Portfolio - language
+      "#p-card1-tex",
+      "#p-card2-tex",
+      "#portfolio-sec .btn",
+      // Contact - language
+      "#c-name",
+      "#c-email",
+      "#c-mess",
+      "#contact-sec button"
+   ];
+
    let jsonFile = getJSON("http://www.mocky.io/v2/5dcdde1b2e0000670072a0af");
-   console.log(jsonFile.english.iname);
-   //console.log(jsonFile.english.i_at);
-   // navbar - language
-   $("#n-me").text(jsonFile.english.n_me);
-   $("#n-port").text(jsonFile.english.n_portfolio);
-   $("#n-cont").text(jsonFile.english.n_contact);
-   $("#navbarDropdown").text(jsonFile.english.n_dropdown);
-   // Info - language
-   $("#i-key-name").text(jsonFile.spanish.i_key_name);
-   $("#i-key-last").text(jsonFile.spanish.i_key_last);
-   $("#i-key-occu").text(jsonFile.swedish.i_key_occupation);
-   $("#i-val-occu").text(jsonFile.swedish.i_val_occupation);
-   $("#i-key-cour").text(jsonFile.english.i_key_course);
-   $("#i-val-cour").text(jsonFile.english.i_val_course);
-   $("#i-key-at").text(jsonFile.english.i_key_at);
-   $("#i-key-star").text(jsonFile.english.i_key_start);
-   $("#i-val-star").text(jsonFile.english.i_val_start);
-   $("#i-key-lear").text(jsonFile.english.i_key_learning);
-   // Portfolio - language
-   $("#p-card1-tex").text(jsonFile.english.p_card1_text);
-   $("#p-card2-tex").text(jsonFile.english.p_card2_text);
-   $("#portfolio-sec .btn").text(jsonFile.english.p_button);
-   // Contact - language
-   $("#c-name").text(jsonFile.english.c_name);
-   $("#c-email").text(jsonFile.english.c_email);
-   $("#c-mess").text(jsonFile.english.c_message);
-   $("#contact-sec button").text(jsonFile.english.c_button);
+   let jsonEnglish = jsonFile.english;
+   let jsonSwedish = jsonFile.swedish;
+   let jsonSpanish = jsonFile.spanish;
+
+   renderTranslation(jsonSwedish);
+
+   function renderTranslation(language) {
+      let index = 0;
+      $.each(language, function(key, value) {
+         $(elementsToTranslate[index]).text(value);
+         index++;
+      });      
+   }
 
 
    let learning = [
@@ -72,16 +88,16 @@ $(document).ready(function() {
 
    // Do effects on each learning item (zoom // show name) Infinite loop.
    function infinite() {
-      $.each(learning, function(key, value) {
-         setTimeout(writeList, key * 1000);         
+      $.each(learning, function (index, value) {
+         setTimeout(writeList, index * 1000);
          function writeList() {
             $("#learning div img").removeClass("hooover");
             $("#learning-here").text(value).hide().fadeIn("slow");
-            $("#log-" + key).addClass("hooover");
+            $("#log-" + index).addClass("hooover");
          }
-         if (key == learning.length - 1) {
-            setTimeout(infinite, (key + 1) * 1000);
-         }        
+         if (index == learning.length - 1) {
+            setTimeout(infinite, (index + 1) * 1000);
+         }
       });
    }
    infinite();
