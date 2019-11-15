@@ -30,7 +30,6 @@ $(document).ready(function () {
 
    //eventlistener
    
-
    let elementsToTranslate = [
       "#n-me",
       "#n-port",
@@ -62,6 +61,10 @@ $(document).ready(function () {
    let jsonEnglish = jsonFile.english;
    let jsonSwedish = jsonFile.swedish;
    let jsonSpanish = jsonFile.spanish;
+
+   $("#n-english").click(function(){renderTranslation(jsonEnglish)});
+   $("#n-swedish").click(function(){renderTranslation(jsonSwedish)});
+   $("#n-spanish").click(function(){renderTranslation(jsonSpanish)});
 
    renderTranslation(jsonSwedish);
 
