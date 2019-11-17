@@ -175,7 +175,7 @@ main {
    }
 
    .c-body-size {
-      min-height: 120px;
+      min-height: 130px;
    }
 }
 
@@ -185,9 +185,9 @@ main {
    @extend %flex-around-center;
    min-height: 95vh;
 }
-   
+
 form {
-   width: 50%;
+   width: 60%;
 }
 
 #contact-icon-sec {

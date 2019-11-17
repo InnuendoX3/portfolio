@@ -173,7 +173,7 @@ main {
   width: 239px;
 }
 #portfolio-sec .c-body-size {
-  min-height: 120px;
+  min-height: 130px;
 }
 
 /* --- SECTION: CONTACT--- */
@@ -182,7 +182,7 @@ main {
 }
 
 form {
-  width: 50%;
+  width: 60%;
 }
 
 #contact-icon-sec {
