@@ -6,26 +6,24 @@ $code-color-val: #7a263a;
    align-items: center;
 }
 
-body {
+main {
    display: flex;
-   background-color: #ffffff;
-   ;
-   //justify-content: center;
+   flex-direction: column;
+
 }
 
-//main {
-//   width: 80%;
-//}
-
-
 #my-picture {
-   overflow: hidden;
-   display: flex;
-   justify-content: center;
-   img {
-      height: 100vh;
-   }
+   margin: 0;
+   min-height: 100vh;
+   background-image: url(../images/me.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   
 } 
+
+
 
 /* --- SECTION: THIS IS ME --- */
 #this-is-me-sec {
