@@ -1,8 +1,11 @@
 $code-color-val: #7a263a;
+
+// Responsive breakpoints
 $break-small: 576px;
 $break-medium: 768px;
 $break-large: 992px;
 $break-x-large: 1200px;
+   // @media screen and (max-width: $break-small) {}
 
 %flex-around-center {
    display: flex;
@@ -13,19 +16,37 @@ $break-x-large: 1200px;
 main {
    display: flex;
    flex-direction: column;
+   
 
 }
 
-#my-picture {
-   margin: 0;
-   min-height: 100vh;
-   background-image: url(../images/me.jpg);
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center;
-   background-attachment: fixed;
-   
+#bg-picture {
+   // Picture appears as background just on Small and Medium
+   @media screen and (max-width: $break-medium) {
+      margin: 0;
+      min-height: 100vh;
+      background-image: url(../images/me.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+   }   
+}
+
+#side-picture {
+   img {
+      // Picture appears on right side on large and x-large
+      @media screen and (min-width: $break-medium) {
+         height: 45vh;
+      }
+      // Not shown on Small and Medium
+      @media screen and (max-width: $break-medium) {
+         display: none;
+      }
+   }   
 } 
+
+
 
 
 
@@ -37,12 +58,12 @@ main {
    color: #5697db;
 }
 
-#my-info-deco {
+/*#info-learning{
    display: flex;
    flex-direction: column;
    align-items: center;
    width: 100%;
-}
+}*/
 
 #my-info {
    display: flex;
@@ -79,7 +100,6 @@ main {
             opacity: 1;
          }
       }
-
       .hooover{
          width: 60px;
          opacity: 1;
@@ -87,10 +107,6 @@ main {
    }
 }
 
-.deco {
-   font-size: 300px;
-   color: #bce4fc;
-}
 .key {
    width: 25%;
    text-align: left;
@@ -111,9 +127,7 @@ main {
 
 /* --- SECTION: PORTFOLIO --- */
 #portfolio-sec {
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
+   @extend %flex-around-center;
    flex-wrap: wrap;
    height: 90%;
 
@@ -133,9 +147,7 @@ main {
 
 /* --- SECTION: CONTACT--- */
 #contact-sec {
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
+   @extend %flex-around-center;
    height: 90%;
 }
    

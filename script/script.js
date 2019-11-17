@@ -4,7 +4,7 @@ $(document).ready(function () {
 
    // Navbar - links
    $("#me-link").click(function () {
-      $("#this-is-me-sec").show();
+      $("#this-is-me-sec, #bg-picture").show();
       $("#portfolio-sec, #contact-sec").hide();
       $(this).addClass("active");
       $("#portfolio-link, #contact-link").removeClass("active");
@@ -13,14 +13,14 @@ $(document).ready(function () {
 
    $("#portfolio-link").click(function () {
       $("#portfolio-sec").show();
-      $("#this-is-me-sec, #contact-sec").hide();
+      $("#this-is-me-sec, #contact-sec, #bg-picture").hide();
       $(this).addClass("active");
       $("#me-link, #contact-link").removeClass("active");
    });
 
    $("#contact-link").click(function () {
       $("#contact-sec").show();
-      $("#this-is-me-sec, #portfolio-sec").hide();
+      $("#this-is-me-sec, #portfolio-sec, #bg-picture").hide();
       $(this).addClass("active");
       $("#me-link, #portfolio-link").removeClass("active");
    });
