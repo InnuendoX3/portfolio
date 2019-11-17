@@ -9,10 +9,6 @@ body {
   background-color: #ffffff;
 }
 
-main {
-  width: 80%;
-}
-
 #my-picture {
   overflow: hidden;
   display: flex;
