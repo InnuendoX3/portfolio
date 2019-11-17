@@ -19,6 +19,13 @@ main {
 }
 
 #bg-picture {
+   margin: 0;
+   min-height: 100vh;
+   background-image: url(../images/me.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
    // Picture appears as background just on Small and Medium
    @media screen and (max-width: $break-medium) {
       margin: 0;
@@ -31,10 +38,14 @@ main {
    }   
 }
 
+/*
 #side-picture {
    img {
+      @media screen and (min-width: $break-large) {
+         height: 534px; // As side image
+      }
       // Picture appears on right side on large and x-large
-      @media screen and (min-width: $break-medium) {
+      @media screen and (max-width: $break-large) {
          height: 95vh;
       }
       // Not shown on Small and Medium
@@ -43,7 +54,7 @@ main {
       }
    }   
 } 
-
+*/
 
 
 
