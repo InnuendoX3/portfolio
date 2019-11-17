@@ -31,7 +31,6 @@ main {
   display: flex;
   flex-direction: column;
   text-align: left;
-  font-family: "Source Code Pro", monospace;
   font-size: 24px;
 }
 #my-info a {
@@ -46,6 +45,7 @@ main {
 
 #learning {
   height: 100px;
+  margin-bottom: 30px;
 }
 #learning div {
   width: 80px;
@@ -110,6 +110,7 @@ main {
 
 .key {
   width: 27%;
+  margin-right: 8px;
   text-align: right;
 }
 @media screen and (max-width: 576px) {

@@ -2,7 +2,8 @@ $(document).ready(function () {
    $("#portfolio-sec").hide();
    $("#contact-sec").hide();
 
-   // Navbar - links
+   /* ===== NAVBAR LINKS ===== */
+   
    $("#me-link").click(function () {
       $("#this-is-me-sec, #bg-picture").show();
       $("#portfolio-sec, #contact-sec").hide();
