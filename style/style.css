@@ -102,6 +102,25 @@ main {
     width: 60px;
   }
 }
+@media screen and (max-width: 576px) {
+  #learning {
+    justify-content: space-evenly;
+  }
+  #learning div {
+    width: 10px;
+    height: 10px;
+  }
+  #learning div img {
+    width: 25px;
+    margin: 1px;
+  }
+  #learning div img:hover {
+    width: 40px;
+  }
+  #learning div .hooover {
+    width: 40px;
+  }
+}
 
 .key {
   width: 25%;
@@ -120,11 +139,22 @@ main {
     font-size: 24px;
   }
 }
+@media screen and (max-width: 576px) {
+  .value {
+    font-size: 22px;
+  }
+}
 
 .f-center {
   display: flex;
   align-items: center;
   margin: 10px;
+}
+@media screen and (max-width: 576px) {
+  .f-center {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 
 /* --- SECTION: PORTFOLIO --- */

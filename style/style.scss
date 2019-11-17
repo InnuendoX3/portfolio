@@ -120,8 +120,25 @@ main {
             width: 60px;
          }
       }
-
    }
+   @media screen and (max-width: $break-small) {
+      justify-content: space-evenly;
+      div{
+         width: 10px;
+         height: 10px;
+         img {
+            width: 25px;
+            margin: 1px;
+            &:hover {
+               width: 40px;
+            }
+         }
+         .hooover{
+            width: 40px;
+         }
+      }
+   }
+
 }
 
 .key {
@@ -137,11 +154,18 @@ main {
    @media screen and (max-width: $break-medium) {
       font-size: 24px;
    }
+   @media screen and (max-width: $break-small) {
+      font-size: 22px;
+   }
 }
 .f-center {
    display: flex;
    align-items: center;
    margin: 10px;
+   @media screen and (max-width: $break-small) {
+      flex-direction: column;
+      flex-wrap: wrap;
+   }
 }
 
 
