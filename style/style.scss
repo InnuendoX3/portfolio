@@ -142,12 +142,15 @@ main {
 }
 
 .key {
-   width: 25%;
-   text-align: left;
+   width: 27%;
+   text-align: right;
    color: #5697db;
+   @media screen and (max-width: $break-small) {
+      width: auto;
+      text-align: center;
+   }
 }
 .value {
-   width: 75%;
    text-align: left;
    color: $code-color-val;
    font-size: 28px;
@@ -155,7 +158,9 @@ main {
       font-size: 24px;
    }
    @media screen and (max-width: $break-small) {
+      width: auto;
       font-size: 22px;
+      text-align: center;
    }
 }
 .f-center {
@@ -164,6 +169,7 @@ main {
    margin: 10px;
    @media screen and (max-width: $break-small) {
       flex-direction: column;
+      justify-content: center;
       flex-wrap: wrap;
    }
 }
