@@ -1,4 +1,4 @@
-$code-color-val: #7a263a;
+$code-color-val: #1A2743;
 
 // Responsive breakpoints
 $break-small: 576px;
@@ -16,6 +16,7 @@ $break-x-large: 1200px;
 main {
    display: flex;
    flex-direction: column;
+   background-color: #ffffff;
 }
 
 #bg-picture {
@@ -38,41 +39,14 @@ main {
    }   
 }
 
-/*
-#side-picture {
-   img {
-      @media screen and (min-width: $break-large) {
-         height: 534px; // As side image
-      }
-      // Picture appears on right side on large and x-large
-      @media screen and (max-width: $break-large) {
-         height: 95vh;
-      }
-      // Not shown on Small and Medium
-      @media screen and (max-width: $break-medium) {
-         display: none;
-      }
-   }   
-} 
-*/
-
-
-
 
 /* --- SECTION: THIS IS ME --- */
 #this-is-me-sec {
    @extend %flex-around-center;
    flex-wrap: wrap;
-   height: 100vh;
-   color: #5697db;
+   min-height: 100vh;
+   color: #435FA1;
 }
-
-/*#info-learning{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   width: 100%;
-}*/
 
 #my-info {
    display: flex;
@@ -93,7 +67,6 @@ main {
 #learning {
    @extend %flex-around-center;
    height: 100px;
-   //width: 720px;
    div {
       width: 80px;
       height: 80px;
@@ -116,7 +89,7 @@ main {
       }
    }   
    @media screen and (max-width: $break-medium) {
-      //width: 576px;
+      height: 80px;
       div{
          width: 63px;
          height: 63px;
@@ -133,6 +106,7 @@ main {
       }
    }
    @media screen and (max-width: $break-small) {
+      height: 50px;
       justify-content: space-evenly;
       div{
          width: 10px;
@@ -155,7 +129,6 @@ main {
 .key {
    width: 27%;
    text-align: right;
-   color: #5697db;
    @media screen and (max-width: $break-small) {
       width: auto;
       text-align: center;
@@ -186,11 +159,12 @@ main {
 }
 
 
+
 /* --- SECTION: PORTFOLIO --- */
 #portfolio-sec {
    @extend %flex-around-center;
    flex-wrap: wrap;
-   height: 90%;
+   min-height: 95vh;
 
    img {
       height: 200px;
@@ -201,7 +175,7 @@ main {
    }
 
    .c-body-size {
-      height: 120px;
+      min-height: 120px;
    }
 }
 
@@ -209,7 +183,7 @@ main {
 /* --- SECTION: CONTACT--- */
 #contact-sec {
    @extend %flex-around-center;
-   height: 90%;
+   min-height: 95vh;
 }
    
 form {
