@@ -1,4 +1,8 @@
 $code-color-val: #7a263a;
+$break-small: 576px;
+$break-medium: 768px;
+$break-large: 992px;
+$break-x-large: 1200px;
 
 %flex-around-center {
    display: flex;
