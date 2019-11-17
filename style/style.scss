@@ -16,8 +16,6 @@ $break-x-large: 1200px;
 main {
    display: flex;
    flex-direction: column;
-   
-
 }
 
 #bg-picture {
@@ -37,7 +35,7 @@ main {
    img {
       // Picture appears on right side on large and x-large
       @media screen and (min-width: $break-medium) {
-         height: 45vh;
+         height: 95vh;
       }
       // Not shown on Small and Medium
       @media screen and (max-width: $break-medium) {
@@ -54,7 +52,7 @@ main {
 #this-is-me-sec {
    @extend %flex-around-center;
    flex-wrap: wrap;
-   height: 90%;
+   height: 100vh;
    color: #5697db;
 }
 
@@ -68,28 +66,29 @@ main {
 #my-info {
    display: flex;
    flex-direction: column;
-   width: 700px;
+   //width: 700px;
    text-align: left;
    font-family: 'Source Code Pro', monospace;
    font-size: 24px;
-
    a {
       color: $code-color-val;
+   }
+   @media screen and (max-width: $break-medium) {
+      width: auto;
+      font-size: 20px;
    }
 }
 
 #learning {
    @extend %flex-around-center;
    height: 100px;
-   width: 720px;
-
+   //width: 720px;
    div {
       width: 80px;
       height: 80px;
       display: flex;
       justify-content: center;
-      align-items: center;
-         
+      align-items: center;         
       img {
          width: 40px;
          margin: 5px;
@@ -104,6 +103,24 @@ main {
          width: 60px;
          opacity: 1;
       }
+   }   
+   @media screen and (max-width: $break-medium) {
+      //width: 576px;
+      div{
+         width: 63px;
+         height: 63px;
+         img {
+            width: 40px;
+            margin: 4px;
+            &:hover {
+               width: 60px;
+            }
+         }
+         .hooover{
+            width: 60px;
+         }
+      }
+
    }
 }
 
@@ -117,6 +134,9 @@ main {
    text-align: left;
    color: $code-color-val;
    font-size: 28px;
+   @media screen and (max-width: $break-medium) {
+      font-size: 24px;
+   }
 }
 .f-center {
    display: flex;
