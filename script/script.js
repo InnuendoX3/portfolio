@@ -58,7 +58,8 @@ $(document).ready(function () {
       "#contact-sec button"
    ];
 
-   let jsonFile = getJSON("http://www.mocky.io/v2/5dcdde1b2e0000670072a0af");
+   //let jsonFile = getJSON("http://www.mocky.io/v2/5dcdde1b2e0000670072a0af");
+   let jsonFile = getJSON("script/languages.json");
    let jsonEnglish = jsonFile.english;
    let jsonSwedish = jsonFile.swedish;
    let jsonSpanish = jsonFile.spanish;
