@@ -7,7 +7,7 @@
 main {
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
+  background-color: #000000;
 }
 
 #bg-picture {
